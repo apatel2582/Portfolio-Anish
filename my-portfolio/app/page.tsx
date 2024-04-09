@@ -2,6 +2,7 @@
 import Image from "next/image";
 import type { NextPage } from "next";
 import Navbar from "../components/Navbar";
+import { Analytics } from "@vercel/analytics/react";
 
 const Home: NextPage = () => {
   return (
@@ -804,6 +805,7 @@ const Home: NextPage = () => {
           </a>
         </div>
       </main>
+      <Analytics />
     </>
   );
 };
